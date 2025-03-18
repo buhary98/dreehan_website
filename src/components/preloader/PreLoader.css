@@ -1,0 +1,60 @@
+#preloader {
+    overflow: hidden;
+    background: #a4c639;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 9999999;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease;
+}
+
+#preloader.fade-out {
+    opacity: 0;
+}
+
+#preloader .jumper {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+}
+
+#preloader .jumper>div {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: jumper 1s linear infinite;
+}
+
+#preloader .jumper>div:nth-child(2) {
+    animation-delay: 0.33333s;
+}
+
+#preloader .jumper>div:nth-child(3) {
+    animation-delay: 0.66666s;
+}
+
+@keyframes jumper {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
