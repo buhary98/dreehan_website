@@ -1,0 +1,47 @@
+.services {
+    margin-top: 140px;
+}
+
+.service-item {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.service-item img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.service-item .down-content {
+    background-color: #f7f7f7;
+    padding: 30px;
+}
+
+.service-item .down-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    margin-bottom: 15px;
+}
+
+.service-item .down-content p {
+    margin-bottom: 20px;
+}
+
+.filled-button {
+    background-color: #a4c639;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    border: none;
+    transition: all 0.3s;
+}
+
+.filled-button:hover {
+    background-color: #fff;
+    color: #a4c639;
+}
